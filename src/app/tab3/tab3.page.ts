@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss']
 })
-export class Tab3Page {
+export class Tab3Page { //Esta clase estrutura a minha página
+  public username: string = "Severus Prince Snape";
 
-  constructor() {}
-
+  constructor() { }
 }
