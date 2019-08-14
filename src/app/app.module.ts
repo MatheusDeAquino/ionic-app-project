@@ -9,7 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeedPageModule } from './feed/feed.module';
-import { IntroPageModule } from './intro/intro.module';
+import { IntroPageModule } from './intro/intro.module'; // primeira parte
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +18,7 @@ import { IntroPageModule } from './intro/intro.module';
     IonicModule.forRoot(), 
     AppRoutingModule, 
     FeedPageModule, 
-    IntroPageModule
+    IntroPageModule //primeira parte.
   ],
   providers: [
     StatusBar,

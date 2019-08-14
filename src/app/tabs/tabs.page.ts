@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FeedPage } from '../feed/feed.page';
 
 @Component({
   selector: 'app-tabs',

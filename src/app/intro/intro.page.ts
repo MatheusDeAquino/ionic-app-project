@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { NavController, NavParams } from '@ionic/angular';
 
 @Component({
   selector: 'app-intro',
@@ -10,10 +11,17 @@ export class IntroPage implements OnInit {
     initialSlide: 1,
     speed: 400
   };
+  router: any;
 
-  constructor() { }
-
+  constructor(){ //public navCtrl: NavController, public navParams: NavParams
+  }
+  
   ngOnInit() {
+  }
+
+
+  goToTabsPage() { //criado para entrar na tabs page
+    this.router.navigate(['/tabs/tab1'])
   }
 
 }

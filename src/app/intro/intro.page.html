@@ -1,23 +1,33 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>intro</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
   <ion-slides pager="true">
 
-    <ion-slide style="background-color: green">
-      <h1>Slide 1</h1>
+    <ion-slide class="slide-image">
+      <img src="assets/images/slide-1.png" atl="">
+      <h1>Meu aplicativo</h1>
+      <br>
+      <div>
+        <p> Primeiro slide para você deslizar para o lado.</p>
+      </div>
     </ion-slide>
 
-    <ion-slide style="background-color: blue">
-      <h1>Slide 2</h1>
+    <ion-slide class="slide-image">
+      <img src="assets/images/slide-2.png" atl="">
+      <h1>Facil navegação</h1>
+      <br>
+      <div>
+        <p> Segundo slide para você deslizar para o lado.</p>
+      </div>
     </ion-slide>
 
-    <ion-slide style="background-color: tomato">
-      <h1>Slide 3</h1>
+    <ion-slide class="slide-image">
+      <img src="assets/images/slide-3.png" atl="">
+      <h1>Siga para o app</h1>
+      <br>
+      <div>
+        <p> Terceiro slide deslizavel. 
+          <a (click)="goToTabsPage()">Clique aqui para ir ao app.</a>
+        </p>
+      </div>
     </ion-slide>
   </ion-slides>
-  
 </ion-content>
