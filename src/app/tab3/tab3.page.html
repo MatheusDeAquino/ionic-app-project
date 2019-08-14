@@ -12,32 +12,32 @@
       <ion-avatar item-start>
         <img src="assets/images/snapeface.PNG">
       </ion-avatar>
-      <h2 class="mensagem_title">{{ username }}</h2>
-      <p class="mensagem_date">July 31, 1980</p>
+      <h2 class="mensagem_title">{{ object_message.titulo }}</h2>
+      <p class="mensagem_date">{{ object_message.data }}</p>
     </ion-item>
 
     <img src="assets/images/babyhp.PNG">
 
     <ion-card-content>
-      <p>Harry Potter nasceu. Parabéns Lilian!</p>
+      <p>{{ object_message.mensagem }}</p>
     </ion-card-content>
 
     <ion-row>
       <ion-col>
         <button ion-button ion-left clear small>
           <ion-icon name="thumbs-up"></ion-icon>
-          <div>7 likes</div>
+          <div>{{ object_message.likes }}</div>
         </button>
       </ion-col>
       <ion-col>
         <button ion-button ion-left clear small>
           <ion-icon name="text"></ion-icon>
-          <div>9 comments</div>
+          <div>{{ object_message.comentarios }}</div>
         </button>
       </ion-col>
       <ion-col center text-center>
         <ion-note>
-          11h ago
+          {{ object_message.momento }}
         </ion-note>
       </ion-col>
     </ion-row>

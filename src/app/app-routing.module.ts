@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
+/*  {
     path: '',
     loadChildren: () => import('./intro/intro.module').then(m => m.IntroPageModule)
   },//Segunda parte. Isto faz ele ficar no inicio mas precisa de algo.
-
+*/
   { path: 'intro', loadChildren: './intro/intro.module#IntroPageModule' },
 
   {
