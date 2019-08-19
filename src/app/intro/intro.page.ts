@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-//import { NavController, NavParams } from '@ionic/angular';
+import { TabsPage } from '../tabs/tabs.page';
+import { NavController, NavParams } from '@ionic/angular';
 
 @Component({
   selector: 'app-intro',
@@ -12,14 +13,15 @@ export class IntroPage implements OnInit {
     speed: 400
   };
   router: any;
+  
 
-  constructor(){ //public navCtrl: NavController, public navParams: NavParams
+  constructor(/*public navCtrl: NavController, public navParams: NavParams*/){ 
   }
   
   ngOnInit() {
   }
 
   goToTabsPage() { //criado para entrar na tabs page
-    this.router.navigate(['/tabs/tab1'])
+    this.router.navigate(['./tabs/tabs.module'])
   }
 }
