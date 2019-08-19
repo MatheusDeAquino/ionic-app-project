@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FeedPageModule } from './feed/feed.module';
 import { IntroPageModule } from './intro/intro.module'; // primeira parte
+import { HttpClientModule } from '@angular/common/http'; // parte do api e json
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { IntroPageModule } from './intro/intro.module'; // primeira parte
     IonicModule.forRoot(), 
     AppRoutingModule, 
     FeedPageModule, 
-    IntroPageModule //primeira parte.
+    IntroPageModule, //primeira parte.
+    HttpClientModule  //parte do api e json
   ],
   providers: [
     StatusBar,

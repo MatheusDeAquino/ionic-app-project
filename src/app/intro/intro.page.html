@@ -1,33 +1,28 @@
-<ion-content>
+<ion-content padding>
   <ion-slides pager="true">
 
-    <ion-slide class="slide-image">
-      <img src="assets/images/slide-1.png" atl="">
-      <h1>Meu aplicativo</h1>
-      <br>
-      <div>
-        <p> Primeiro slide para você deslizar para o lado.</p>
+    <ion-slide>
+      <div class="adaptar-tamanho">
+        <img src="assets/images/slide-1.png">
+          <h2>Meu aplicativo</h2>
+          <p> Primeiro slide para você deslizar para o lado.</p>
       </div>
     </ion-slide>
-
-    <ion-slide class="slide-image">
-      <img src="assets/images/slide-2.png" atl="">
-      <h1>Facil navegação</h1>
-      <br>
-      <div>
+    <ion-slide>
+      <div class="adaptar-tamanho">
+        <img src="assets/images/slide-2.png">
+        <h2>Facil navegação</h2>
         <p> Segundo slide para você deslizar para o lado.</p>
       </div>
     </ion-slide>
-
-    <ion-slide class="slide-image">
-      <img src="assets/images/slide-3.png" atl="">
-      <h1>Siga para o app</h1>
-      <br>
-      <div>
-        <p> Terceiro slide deslizavel. 
-          <a href="#">Clique aqui para ir ao app.</a> 
-          <!--Evento de clicar para seguir ao menu tabs
-            <a (click)="goToTabsPage()">Clique aqui para ir ao app.</a> -->
+    <ion-slide>
+      <div class="adaptar-tamanho">
+        <img src="assets/images/slide-3.png">
+        <h2>Siga para o app</h2>
+        <p> Terceiro slide deslizavel.
+          <!--  <a href="#">Clique aqui para ir ao app.</a> 
+         Evento de clicar para seguir ao menu tabs -->
+          <a (click)="goToTabsPage()">Clique aqui para ir ao app.</a>
         </p>
       </div>
     </ion-slide>
