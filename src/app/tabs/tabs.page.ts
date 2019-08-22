@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
+  navigate(arg0: string[]) {
+    throw new Error("Method not implemented.");
+  }
 
   constructor() {}
 
