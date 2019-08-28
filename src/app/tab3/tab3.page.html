@@ -7,19 +7,19 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
+  <ion-card *ngFor="let filme of lista_filmes" >
     <ion-item>
       <ion-avatar item-start>
         <img src="assets/images/snapeface.PNG">
       </ion-avatar>
-      <h2 class="mensagem_title">{{ object_message.titulo }}</h2>
-      <p class="mensagem_date">{{ object_message.data }}</p>
+      <h2 class="mensagem_title">{{ filme.original_title }}</h2>
+      <p class="mensagem_date">{{ filme.release_date }}</p>
     </ion-item>
 
-    <img src="assets/images/babyhp.PNG">
+    <img [src]="'https://image.tmdb.org/t/p/w500/' + filme.backdrop_path"> <!-- Banco de imagens do proprio site dono da API -->
 
     <ion-card-content>
-      <p>{{ object_message.mensagem }}</p>
+      <p>{{ filme.overview }}</p>
     </ion-card-content>
 
     <ion-row>
